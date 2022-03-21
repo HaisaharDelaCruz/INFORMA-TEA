@@ -1,0 +1,159 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*, *:before, *:after{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #27468F;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: white;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+h3{
+    padding-bottom: 2rem;
+}
+
+li{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    color: black;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 70px;
+    padding-right: 1rem;
+}
+
+@media (min-width: 720px) {
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    header nav{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+
+.sombra{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 1700px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+}
+
+.contenedor{
+    height: 40rem;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+.map_contenedor{
+    width: 60rem;
+    height: 19rem;
+}
+
+.cont-titulos{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.servicios, .servicios1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1rem;
+    text-align: center;
+}
+
+.servicio{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 720px) {
+    .servicios{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .servicios1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .servicio{
+        padding: 10px;
+    }
+}
+
+.contenido-main{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
